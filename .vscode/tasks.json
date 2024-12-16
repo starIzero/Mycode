@@ -2,30 +2,25 @@
 "version": "2.0.0",
 "tasks": [
     {
-    "label": "g++",
-    "command": "g++",
-    "args": [
-        "-g",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.exe"
-    ],
-    "problemMatcher": {
-        "owner": "cpp",
-        "fileLocation": ["relative", "${workspaceRoot}"],
-        "pattern": {
-        "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
-        "file": 1,
-        "line": 2,
-        "column": 3,
-        "severity": 4,
-        "message": 5
+        "type": "cppbuild",
+        "label": "C/C++: g++.exe 生成活动文件",
+        "command": "D:/ProgrammingApps/mingw64/bin/g++.exe",
+        "args": [
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}\\output\\${fileBasenameNoExtension}.exe"
+        ],
+        "options": {
+            "cwd": "${fileDirname}"
+        },
+        "problemMatcher": [
+            "$gcc"
+        ],
+        "group": {
+            "kind": "build",
+            "isDefault": true
         }
-    },
-    "group": {
-        "kind": "build",
-        "isDefault": true
-    }
     }
 ]
 }

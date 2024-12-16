@@ -1,0 +1,11 @@
+# 允许 .vscode 配置文件
+!.vscode/
+
+# 排除编译输出
+**/output/
+*.exe
+*.out
+
+# 其他通用排除项
+*.o
+.DS_Store 
