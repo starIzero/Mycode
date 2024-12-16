@@ -1,4 +1,4 @@
-// 希尔排序
+// Shell Sort
 #include <iostream>
 using namespace std;
 

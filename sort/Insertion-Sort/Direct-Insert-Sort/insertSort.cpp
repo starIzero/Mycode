@@ -1,4 +1,4 @@
-//直接插入排序
+// Direct Insertion Sort
 #include <iostream>
 using namespace std;
 
